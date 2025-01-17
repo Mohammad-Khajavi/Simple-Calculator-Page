@@ -1,0 +1,34 @@
+//to be seen
+$button-gap-size: 10px;
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*gap between input and buttons*/
+    max-width: 320px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $button-gap-size; /*gap size between buttons*/
+    max-width: 320px;
+    margin: auto;
+}
+
+button {
+    flex: 1 1 calc(25% - $button-gap-size); /*gap size between buttons*/
+    text-align: center;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    width: 100%;
+}
